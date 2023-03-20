@@ -7,14 +7,11 @@ function Footer() {
     <footer className="footer">
     <div className="container">
       <div className="footer-content">
-        <p>Tous droits réservés 2023 © Pascal Moreno. </p>
-        <p>
-          Designed and developed by{" "}
+        <p>Tous droits réservés ©2023 
           <a href="https://www.pascal-moreno.com">
-            Pascal Moreno
-          </a>
-          .
-        </p>
+            &nbsp; &nbsp;Pascal Moreno
+          </a> 
+          </p>
       </div>
     </div>
   </footer>
