@@ -63,9 +63,7 @@ function Voting(props) {
 
   async function getProposals() {
     return eventData?.map(async (element) => {
-      let proposals = await contract.methods
-        .getOneProposal(element.proposalId)
-        .call({ from: accounts[0] });
+      let proposals = await contract.methods.getOneProposal(element.proposalId).call({ from: accounts[0] });
 
       allProposal.push(proposals)
     })

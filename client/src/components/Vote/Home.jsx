@@ -105,6 +105,7 @@ function Home(props) {
         <Row>
           <Col>
             <h1>Election MISS BERRY 2023</h1>
+            toast.success('Successfully toasted!');
           </Col>
         </Row>
         <Row className="workflowBox">
