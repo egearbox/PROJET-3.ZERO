@@ -1,7 +1,6 @@
-# React client
+# LINK
+https://www.missberry.eth
 
-This react project is unopinionated with only `web3.js` as an added dependency, so nothing stands in your way.
-
-## Getting started
+## Pour tester / installer
 
 Run `npm start` to start the dev server, and `npm build` to create a production build.
