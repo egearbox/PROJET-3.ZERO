@@ -1,6 +1,4 @@
 # LINK
-https://www.missberry.eth
-
-## Pour tester / installer
-
-Run `npm start` to start the dev server, and `npm build` to create a production build.
+https://www.loom.com/share/c037d0dc115b48b3996acf80a6d81a8d
+## 
+Pascal Moreno
