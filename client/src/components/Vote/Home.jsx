@@ -104,7 +104,7 @@ function Home(props) {
       <Col className="display">
         <Row>
           <Col>
-            <h1>Bienvenue sur le vote du comité d'entreprise Lalaland</h1>
+            <h1>Election MISS BERRY 2023</h1>
           </Col>
         </Row>
         <Row className="workflowBox">
