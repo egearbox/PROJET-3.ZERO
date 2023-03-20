@@ -1,0 +1,149 @@
+body {
+  height: 100vh;
+}
+
+.homeContainer {
+  text-align: center;
+  background-image: url("../../../public/background.jpeg");
+  height: 83vh;
+  width: 100vw;
+  background-size: cover;
+  margin-left: 0px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.votingContainer {
+  text-align: center;
+  background-image: url("../../../public/background.jpeg");
+ 
+  width: 100vw;
+  background-size: cover;
+  margin-left: 0px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.homeContainer h3 {
+  color: white;
+}
+
+.homeContainer h1 {
+  color: white;
+  margin-bottom: 5%;
+}
+
+.homeContainer h2 {
+  color: white;
+  margin-bottom: 5%;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.workflowBox {
+  background-color: rgba(218, 159, 254, 0.5);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+
+  margin-bottom: 5%;
+}
+
+.my-input {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.justify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 5px; /* added border-radius */
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(34, 73, 128);
+  border: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.my-button:hover {
+  background-color: rgba(218, 159, 254, 0.5);
+}
+
+/* VOTING */
+
+.divPropal {
+  margin-bottom: 5%;
+}
+/* NAV */
+.nav-link {
+  color: #333 !important;
+  text-decoration: none !important;
+  padding: 10px !important;
+  border-radius: 5px !important;
+  /* add more styles here as needed */
+}
+
+.nav-link:hover {
+  background-color: rgba(218, 159, 254, 0.5) !important;
+  color: #fff !important;
+  /* add more styles here as needed */
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 30px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-content a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+  color: #000;
+}
