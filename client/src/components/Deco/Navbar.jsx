@@ -26,23 +26,23 @@ function ColorSchemesExample(props) {
       <Container >
         <div style={{ display: "flex", alignItems: "center" }}>
           <NavLink className="nav-link" to={"/"}>
-            <h1>Home</h1>
+            <h1>Accueil</h1>
           </NavLink>
 
           <Nav className="me-auto">
             {accounts?.includes(owner) ? (
-              <NavLink to={"/admin"}>
-                <h1 className="nav-link">Admin</h1>
+              <NavLink to={"/Admin"}>
+                <h1 className="nav-link">Gestion</h1>
               </NavLink>
             ) : null}
             {status != 3 ? null : (
-              <NavLink to={"/voting"}>
-                <h1 className="nav-link">Voter</h1>
+              <NavLink to={"/Voting"}>
+                <h1 className="nav-link">Scrutin</h1>
               </NavLink>
             )}
 
             {status == 5 && (
-              <NavLink to={"/tallyVote"}>
+              <NavLink to={"/TallyVote"}>
                 <h1 className="nav-link">Résultats</h1>
               </NavLink>
             )}

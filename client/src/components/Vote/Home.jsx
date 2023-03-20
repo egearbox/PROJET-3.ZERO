@@ -70,10 +70,8 @@ function Home(props) {
   useEffect(() => {
     async function getPastEvent() {
       if (contract) {
-        // Quand j'ajoute ces deux lignes je n'ai pas accès à tout les events juste le dernier
-        // const deployTx = await web3.eth.getTransaction(txhash)
-        // console.log("dTX", deployTx);
-        const results = await contract.getPastEvents("ProposalRegistered", { fromBlock: 0, toBlock: "latest" });
+         const deployTx = await web3.eth.getTransaction(txhash)
+         const results = await contract.getPastEvents("ProposalRegistered", { fromBlock: 0, toBlock: "latest" });
 
         const Transfers = results.map((transfer) => {
           let PastE = { proposalId: null, };
@@ -105,16 +103,16 @@ function Home(props) {
         <Row>
           <Col>
             <h1>Election MISS BERRY 2023</h1>
-            toast.success('Successfully toasted!');
+            {/* toast.success('Successfully toasted!'); */}
           </Col>
         </Row>
         <Row className="workflowBox">
           <Col md={12}>
-            <h3>statut de la session de vote</h3>
+            <h3>statut du SCRUTIN de VOTE</h3>
           </Col>
 
           <Col md={12}>
-            <h3>{WorkflowStatus[status]}</h3>
+            <h3>{case of WorkflowStatus[status]? "RegisteringVoters" : "Enregistrement des votant"}</h3>
           </Col>
         </Row>
         <Row>
@@ -124,18 +122,18 @@ function Home(props) {
             </Col>
           ) : status != 1 && !voter?.isRegistered ? (
             <Col>
-              <p>Vous n'êtes pas enregistré</p>
+              <p>Vous n'êtes pas enregistré comme voter</p>
             </Col>
           ) : (
             status == 1 &&
             voter?.isRegistered && (
               <Col>
-                <h2>Veuillez rentrer une proposition</h2>
+                <h2>Veuillez rentrer votre proposition</h2>
                 <input
                   className="my-input"
                   onChange={(e) => setProposition(e.target.value)}
                 />
-                <Button name={"Ajouter ma proposition"} action={addProposal} />
+                <Button name={"Ajouter votre proposition"} action={addProposal} />
               </Col>
             )
           )}

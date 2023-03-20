@@ -58,9 +58,9 @@ function Navigation() {
       <div>
         <Routes>
           <Route path="/" exact element={<Home getStatus={getStatus} />} />
-          <Route path="/admin" element={<Admin getStatus={getStatus} />} />
-          <Route path="/voting" element={<Voting getStatus={getStatus} />} />
-          <Route path="/tallyVote" element={<TallyVote getStatus={getStatus} />} />
+          <Route path="/Admin" element={<Admin getStatus={getStatus} />} />
+          <Route path="/Voting" element={<Voting getStatus={getStatus} />} />
+          <Route path="/TallyVote" element={<TallyVote getStatus={getStatus} />} />
         </Routes>
       </div>
       <Footer />
