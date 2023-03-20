@@ -15,7 +15,7 @@ function Admin(props) {
 
     try {
       if (await contract.methods.addVoter(key).call({ from: accounts[0] })) {
-        // let start = await contract.methods.startProposalsRegistering().send({ from: accounts[0] });
+
         let status = await contract.methods
           .addVoter(key)
           .send({ from: accounts[0] });
@@ -132,10 +132,23 @@ function Admin(props) {
     <Row className="homeContainer">
       <Row>
         <Col>
+          <h2>Veuillez rajouter des voteurs</h2>
+          <Form>
+            <input
+              className="my-input"
+              onChange={(e) => setKey(e.target.value)}
+              placeholder="ajoutez une adresse"
+            />
+          </Form>
+          <Button name={"Valider"} action={addVoter} />
+        </Col>
+      </Row>
+       <Row className="align-items-center">
+       <Col xs="auto" className="my-1">
           <h2>Start proposal registering</h2>
           <Button name={"Start"} action={startProposalRegistering} />
         </Col>
-        <Col>
+        <Col xs="auto" className="my-1">
           <h2>End proposal registering</h2>
           <Button name={"Done"} action={endProposalRegistering} />
         </Col>
@@ -152,19 +165,7 @@ function Admin(props) {
           <Button name={"Start"} action={tallyVote} />
         </Col>
       </Row>
-      <Row>
-        <Col>
-          <h2>Veuillez rajouter des voteurs</h2>
-          <Form>
-            <input
-              className="my-input"
-              onChange={(e) => setKey(e.target.value)}
-              placeholder="ajoutez une adresse"
-            />
-          </Form>
-          <Button name={"Valider"} action={addVoter} />
-        </Col>
-      </Row>
+      
     </Row>
   );
 }

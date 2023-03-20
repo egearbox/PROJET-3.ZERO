@@ -129,10 +129,10 @@ function Voting(props) {
           {renderProposal()}
         </Row>
         <Row>
-          {/* <Col md={12} className="workflowBox">
+          { <Col md={12} className="workflowBox">
             <h1>Proposition sélectionnée: </h1>
             <h1>{proposal.description} </h1>
-          </Col> */}
+          </Col>}
           <Col md={12}>
 
 

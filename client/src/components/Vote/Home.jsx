@@ -112,13 +112,28 @@ function Home(props) {
           </Col>
 
           <Col md={12}>
-            <h3>{case of WorkflowStatus[status]? "RegisteringVoters" : "Enregistrement des votant"}</h3>
+            <h3>
+      {(() => {
+        switch (WorkflowStatus[status]) {
+          case "RegisteringVoters":   return "Enregistrement des votant";
+          case "ProposalsRegistrationStarted":  return "DEBUT des proposition";
+          case "ProposalsRegistrationEnded": return "FIN des proposition";
+          case "VotingSessionStarted": return "DEBUT du vote Cliquez sur scrutin";
+          case "VotingSessionEnded": return "FIN du vote Cliquez sur scrutin";
+          case "VotesTallied": return "RESULTAT du vote Cliquez RESULTATS";
+          default:      return "*************";
+        }
+      })()}</h3>
+
+            {/* <h3>{!WorkflowStatus[status]? "RegisteringVoters" : "Enregistrement des votant"}</h3>
+            <h3>{!WorkflowStatus[status]? "startProposalRegistering" : "Début des proposition"}</h3> */}
+            
           </Col>
         </Row>
         <Row>
           {status != 1 && voter?.isRegistered ? (
             <Col>
-              <h3>Les propositions ne sont pas encore ouvertes</h3>
+              <h3>Les propositions ne sont PLUS <br/>ou <br/>pas encore OUVERTES</h3>
             </Col>
           ) : status != 1 && !voter?.isRegistered ? (
             <Col>

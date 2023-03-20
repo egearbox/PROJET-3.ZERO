@@ -51,7 +51,7 @@ body {
 }
 
 .workflowBox {
-  background-color: rgba(218, 159, 254, 0.5);
+  background-color: rgba(237, 51, 9, 0.5);
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 10px;
@@ -108,7 +108,7 @@ body {
 }
 
 .nav-link:hover {
-  background-color: rgba(218, 159, 254, 0.5) !important;
+  background-color: rgba(203, 86, 13, 0.5) !important;
   color: #fff !important;
   /* add more styles here as needed */
 }
@@ -116,7 +116,7 @@ body {
 /* FOOTER */
 
 .footer {
-  background-color: #f8f8f8;
+  background-color: #2b282b;
   padding: 30px 0;
 }
 
