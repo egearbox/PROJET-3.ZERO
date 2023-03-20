@@ -4,13 +4,20 @@ function Link({ uri, text }) {
 
 function Footer() {
   return (
-    <footer>
-      <h2>More resources</h2>
-      <Link uri={"https://trufflesuite.com"} text={"Truffle"} />
-      <Link uri={"https://reactjs.org"} text={"React"} />
-      <Link uri={"https://soliditylang.org"} text={"Solidity"} />
-      <Link uri={"https://ethereum.org"} text={"Ethereum"} />
-    </footer >
+    <footer className="footer">
+    <div className="container">
+      <div className="footer-content">
+        <p>Tous droits réservés 2023 © Pascal Moreno. </p>
+        <p>
+          Designed and developed by{" "}
+          <a href="https://www.pascal-moreno.com">
+            Pascal Moreno
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+  </footer>
   );
 }
 
