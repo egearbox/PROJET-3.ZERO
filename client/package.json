@@ -7,8 +7,12 @@
     "start": "webpack serve"
   },
   "dependencies": {
+    "bootstrap": "^3.4.1",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.9.0",
+    "react-toastify": "^9.1.1",
     "web3": "^1.8.2"
   },
   "devDependencies": {
